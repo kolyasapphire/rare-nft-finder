@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/denoland/deno/main/cli/schemas/config-file.v1.json",
+  "imports": {
+    "dotenv": "https://deno.land/std@0.221.0/dotenv/mod.ts",
+    "ethers": "npm:ethers@6.11.1",
+    "opensea-js": "npm:opensea-js@7.1.4"
+  },
+  "tasks": {
+    "fetch-metadata": "deno run --allow-env --allow-net --allow-read --allow-write fetchMetadata.ts",
+    "calculate-rarities": "deno run --allow-env --allow-read --allow-write calculateRarities.ts",
+    "find-available": "deno run --allow-env --allow-read --allow-net --allow-run findAvailable.ts"
+  },
+  "fmt": {
+    "singleQuote": true,
+    "semiColons": false,
+    "lineWidth": 100
+  }
+}
