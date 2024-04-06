@@ -1,7 +1,5 @@
 import { URL_BASE, OPENSEA_COLLECTION_ID } from "./config.ts";
 
-import type { Data } from "./types.ts";
-
 try {
   await Deno.stat(`${OPENSEA_COLLECTION_ID}_metadata/`);
 } catch {
